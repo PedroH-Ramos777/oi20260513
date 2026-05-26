@@ -1,0 +1,361 @@
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~
+$ cd ^[[200~search-ms:displayname=Resultados%20da%20Pesquisa%20em%20Início&crumb=location:%3A%3A{F874310E-B6B7-47DC-BC84-B9E6B38F5903}\oi13052026.git~
+[1] 295
+bash: cd: $'\E[200~search-ms:displayname=Resultados%20da%20Pesquisa%20em%20Início': No such file or directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[master 1a125b5] Revert "errei..."
+ 1 file changed, 1 deletion(-)
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git config --global core.editor nano
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git historia
+* 1a125b5 2026-05-26 | Revert "errei..." (HEAD -> master) [pedrohramos]
+* 1157752 2026-05-26 | errei... [pedrohramos]
+* e4975b7 2026-05-13 | Alterado a cor do titulo para azul (tag: v1) [pedrohramos]
+* 4799684 2026-05-13 | Adcicionei o titulo principal ao html (tag: v1-beta) [pedrohramos]
+* 9a7fdfd 2026-05-13 | Adcicionei o idioma e um hello world [pedrohramos]
+* 487cba0 2026-05-13 | Primeiro commit [pedrohramos]
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git tag ops
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git reset --hard v1
+HEAD is now at e4975b7 Alterado a cor do titulo para azul
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git historia
+* e4975b7 2026-05-13 | Alterado a cor do titulo para azul (HEAD -> master, tag:v1) [pedrohramos]
+* 4799684 2026-05-13 | Adcicionei o titulo principal ao html (tag: v1-beta) [pedrohramos]
+* 9a7fdfd 2026-05-13 | Adcicionei o idioma e um hello world [pedrohramos]
+* 487cba0 2026-05-13 | Primeiro commit [pedrohramos]
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git historia --all
+* 1a125b5 2026-05-26 | Revert "errei..." (tag: ops) [pedrohramos]
+* 1157752 2026-05-26 | errei... [pedrohramos]
+| * b65b39d 2026-05-26 | Adiciona rodapé com o nome do autor (develop) [pedrohramos]
+|/
+* e4975b7 2026-05-13 | Alterado a cor do titulo para azul (HEAD -> master, tag:v1) [pedrohramos]
+* 4799684 2026-05-13 | Adcicionei o titulo principal ao html (tag: v1-beta) [pedrohramos]
+* 9a7fdfd 2026-05-13 | Adcicionei o idioma e um hello world [pedrohramos]
+* 487cba0 2026-05-13 | Primeiro commit [pedrohramos]
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git tag -d ops
+Deleted tag 'ops' (was 1a125b5)
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git historia --all
+* b65b39d 2026-05-26 | Adiciona rodapé com o nome do autor (develop) [pedrohramos]
+* e4975b7 2026-05-13 | Alterado a cor do titulo para azul (HEAD -> master, tag:v1) [pedrohramos]
+* 4799684 2026-05-13 | Adcicionei o titulo principal ao html (tag: v1-beta) [pedrohramos]
+* 9a7fdfd 2026-05-13 | Adcicionei o idioma e um hello world [pedrohramos]
+* 487cba0 2026-05-13 | Primeiro commit [pedrohramos]
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ nano oi.html
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git add oi.html
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git commmit -m "Adiciona o cabeçalho HTML"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git commit -m "Adiciona o cabeçalho HTML"
+[master ab99323] Adiciona o cabeçalho HTML
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ nano oi.html
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git add oi.html
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git commit -m "Adiciona o cabeçalho e corpo HTML"
+[master ac20408] Adiciona o cabeçalho e corpo HTML
+ 1 file changed, 2 insertions(+)
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git historia
+* ac20408 2026-05-26 | Adiciona o cabeçalho e corpo HTML (HEAD -> master) [pedrohramos]
+* ab99323 2026-05-26 | Adiciona o cabeçalho HTML [pedrohramos]
+* e4975b7 2026-05-13 | Alterado a cor do titulo para azul (tag: v1) [pedrohramos]
+* 4799684 2026-05-13 | Adcicionei o titulo principal ao html (tag: v1-beta) [pedrohramos]
+* 9a7fdfd 2026-05-13 | Adcicionei o idioma e um hello world [pedrohramos]
+* 487cba0 2026-05-13 | Primeiro commit [pedrohramos]
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ mkdir pages
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git mv oi.html pages
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    oi.html -> pages/oi.html
+
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git commit -m "Arquivo html movido para pasta pages"
+[master b55b262] Arquivo html movido para pasta pages
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename oi.html => pages/oi.html (100%)
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ mkdir css
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ nano css/oi.css
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git add .
+warning: in the working copy of 'css/oi.css', LF will be replaced by CRLF the next time Git touches it
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ ^C
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git add .
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git commit -m "Cria pasta e arquivo css para o projeto"
+[master a1c740a] Cria pasta e arquivo css para o projeto
+ 1 file changed, 3 insertions(+)
+ create mode 100644 css/oi.css
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git brunch estilo
+git: 'brunch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git checkout estilo
+error: pathspec 'estilo' did not match any file(s) known to git
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git branch estilo
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git checkout estilo
+Switched to branch 'estilo'
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ mkdir js
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ nano js/oi.js
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git add js/oi.js
+warning: in the working copy of 'js/oi.js', LF will be replaced by CRLF the next time Git touches it
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git commit -m "Criada pasta e arquivo js para o projeto"
+[estilo 57b02d1] Criada pasta e arquivo js para o projeto
+ 1 file changed, 1 insertion(+)
+ create mode 100644 js/oi.js
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ nano css/oi.css
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ nano css/oi.css
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git commit -m "Adicionado cor á fonto"
+On branch estilo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/oi.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ nano pages/oi.html
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git add pages/oi.html
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git commit -m "Linkado o arquivo de estilo à página"
+[estilo 33487aa] Linkado o arquivo de estilo à página
+ 1 file changed, 1 insertion(+)
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git checkout master
+M       css/oi.css
+Switched to branch 'master'
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git checkout estilo
+M       css/oi.css
+Switched to branch 'estilo'
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (estilo)
+$ git checkout master
+M       css/oi.css
+Switched to branch 'master'
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git marge estilo
+git: 'marge' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git branch -d estilo
+error: the branch 'estilo' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D estilo'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git checkout master
+M       css/oi.css
+Already on 'master'
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git remote add origin https://github.com/PedroH-Ramos777/oi20260513.git
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git push -u origin master
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (24/24), 2.09 KiB | 714.00 KiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/PedroH-Ramos777/oi20260513.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git branch
+  develop
+  estilo
+* master
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git merge estilo
+Updating a1c740a..33487aa
+Fast-forward
+ js/oi.js      | 1 +
+ pages/oi.html | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 js/oi.js
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ ls
+css/  js/  pages/
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git remote add origin https://github.com/PedroH-Ramos777/oi20260513.git
+error: remote origin already exists.
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 723 bytes | 723.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/PedroH-Ramos777/oi20260513.git
+   a1c740a..33487aa  master -> master
+branch 'master' set up to track 'origin/master'.
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ scripts meus_logs.txt
+bash: scripts: command not found
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$ git log > logs_do_git.txt
+
+pedro@DESKTOP-CHKIDOM MINGW64 ~/oi13052026.git (master)
+$.
